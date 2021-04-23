@@ -50,7 +50,14 @@
             android:title="@string/lockdown_settings_title"
             android:summary="@string/lockdown_settings_summary"
             settings:controller="com.android.settings.security.LockdownButtonPreferenceController" />
-
+        
+         <com.bootleggers.dumpster.preferences.SystemSettingSwitchPreference
+            android:key="fod_anim"
+            android:title="@string/fod_recog_animation_effect_title"
+            android:summary="%s"
+            android:entries="@array/fod_recog_animation_entries"
+            android:entryValues="@array/fod_recog_animation_values"
+            android:defaultValue="0" />
     </PreferenceCategory>
 
     <PreferenceCategory
